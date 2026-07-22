@@ -11,6 +11,11 @@ public static class BattleMetricsUtility
 {
     public static readonly Dictionary<ulong, int> PlayerToPlaytime = new();
 
+    internal static void Clear()
+    {
+        PlayerToPlaytime.Clear();
+    }
+
     /// <summary>
     /// Returns a list of servers owned by an organization.
     /// </summary>

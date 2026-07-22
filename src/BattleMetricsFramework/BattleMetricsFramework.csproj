@@ -6,15 +6,41 @@
         <Nullable>disable</Nullable>
         <AssemblyName>Oxide.Ext.BattleMetricsFramework</AssemblyName>
         <RootNamespace>Oxide.Ext.BattleMetricsFramework</RootNamespace>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>Oxide;Carbon</Platforms>
 
         <!-- removes the .pdb file from the output folder -->
         <DebugType>embedded</DebugType>
         <LangVersion>11</LangVersion>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Carbon' ">
+        <DefineConstants>TRACE;DEBUG;CARBON</DefineConstants>
+        <AssemblyName>Carbon.Ext.BattleMetricsFramework</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Oxide' ">
+        <DefineConstants>TRACE;DEBUG;OXIDE</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Carbon' ">
+        <DefineConstants>TRACE;CARBON</DefineConstants>
+        <AssemblyName>Carbon.Ext.BattleMetricsFramework</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Oxide' ">
+        <DefineConstants>TRACE;OXIDE</DefineConstants>
+    </PropertyGroup>
+
     <ItemGroup>
       <Reference Include="Assembly-CSharp">
         <HintPath>..\dependencies\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Carbon.Common" Condition=" '$(Platform)' == 'Carbon'">
+        <HintPath>..\dependencies\Carbon.Common.dll</HintPath>
+      </Reference>
+      <Reference Include="Carbon.SDK" Condition=" '$(Platform)' == 'Carbon'">
+        <HintPath>..\dependencies\Carbon.SDK.dll</HintPath>
       </Reference>
       <Reference Include="Facepunch.UnityEngine">
         <HintPath>..\dependencies\Facepunch.UnityEngine.dll</HintPath>
@@ -22,10 +48,13 @@
       <Reference Include="mscorlib">
         <HintPath>..\dependencies\mscorlib.dll</HintPath>
       </Reference>
-      <Reference Include="Oxide.Core">
+      <Reference Include="Newtonsoft.Json" Condition=" '$(Platform)' == 'Carbon'">
+        <HintPath>..\dependencies\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+      <Reference Include="Oxide.Core" Condition=" '$(Platform)' == 'Oxide'">
         <HintPath>..\dependencies\Oxide.Core.dll</HintPath>
       </Reference>
-      <Reference Include="Oxide.References">
+      <Reference Include="Oxide.References" Condition=" '$(Platform)' == 'Oxide'">
         <HintPath>..\dependencies\Oxide.References.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.CoreModule">
