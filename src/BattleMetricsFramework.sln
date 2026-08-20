@@ -4,19 +4,43 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleMetricsFramework", "B
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Carbon = Debug|Carbon
-		Debug|Oxide = Debug|Oxide
-		Release|Carbon = Release|Carbon
-		Release|Oxide = Release|Oxide
+		1. Main|Windows = 1. Main|Windows
+		1. Main|Linux = 1. Main|Linux
+		2. Staging|Windows = 2. Staging|Windows
+		2. Staging|Linux = 2. Staging|Linux
+		3. Oxide|Windows = 3. Oxide|Windows
+		3. Oxide|Linux = 3. Oxide|Linux
+		4. Oxide Staging|Windows = 4. Oxide Staging|Windows
+		4. Oxide Staging|Linux = 4. Oxide Staging|Linux
+		5. Carbon|Windows = 5. Carbon|Windows
+		5. Carbon|Linux = 5. Carbon|Linux
+		6. Carbon Staging|Windows = 6. Carbon Staging|Windows
+		6. Carbon Staging|Linux = 6. Carbon Staging|Linux
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Debug|Carbon.ActiveCfg = Debug|Carbon
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Debug|Carbon.Build.0 = Debug|Carbon
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Debug|Oxide.ActiveCfg = Debug|Oxide
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Debug|Oxide.Build.0 = Debug|Oxide
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Release|Carbon.ActiveCfg = Release|Carbon
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Release|Carbon.Build.0 = Release|Carbon
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Release|Oxide.ActiveCfg = Release|Oxide
-		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.Release|Oxide.Build.0 = Release|Oxide
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.1. Main|Windows.ActiveCfg = 1. Main|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.1. Main|Windows.Build.0 = 1. Main|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.1. Main|Linux.ActiveCfg = 1. Main|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.1. Main|Linux.Build.0 = 1. Main|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.2. Staging|Windows.ActiveCfg = 2. Staging|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.2. Staging|Windows.Build.0 = 2. Staging|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.2. Staging|Linux.ActiveCfg = 2. Staging|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.2. Staging|Linux.Build.0 = 2. Staging|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.3. Oxide|Windows.ActiveCfg = 3. Oxide|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.3. Oxide|Windows.Build.0 = 3. Oxide|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.3. Oxide|Linux.ActiveCfg = 3. Oxide|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.3. Oxide|Linux.Build.0 = 3. Oxide|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.4. Oxide Staging|Windows.ActiveCfg = 4. Oxide Staging|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.4. Oxide Staging|Windows.Build.0 = 4. Oxide Staging|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.4. Oxide Staging|Linux.ActiveCfg = 4. Oxide Staging|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.4. Oxide Staging|Linux.Build.0 = 4. Oxide Staging|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.5. Carbon|Windows.ActiveCfg = 5. Carbon|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.5. Carbon|Windows.Build.0 = 5. Carbon|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.5. Carbon|Linux.ActiveCfg = 5. Carbon|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.5. Carbon|Linux.Build.0 = 5. Carbon|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.6. Carbon Staging|Windows.ActiveCfg = 6. Carbon Staging|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.6. Carbon Staging|Windows.Build.0 = 6. Carbon Staging|Windows
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.6. Carbon Staging|Linux.ActiveCfg = 6. Carbon Staging|Linux
+		{4F7D415D-B726-453E-A163-F72BD0D3EB52}.6. Carbon Staging|Linux.Build.0 = 6. Carbon Staging|Linux
 	EndGlobalSection
 EndGlobal
